@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7745d25e7aabaa5429cab09730a31a8f, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  mapWidth: 10
+  mapHeight: 10
+  cellLength: 1.1
+  ships:
+  - length: 1
+    number: 2
+    name: small
+  - length: 3
+    number: 3
+    name: middle
+  - length: 4
+    number: 1
+    name: huge
+  blockedMaterial: {fileID: 2100000, guid: 748c12f7c5150364c92ed8d37a5b5ca5, type: 2}
+  deadMaterial: {fileID: 2100000, guid: 34c578f75e9acf649bf8d02796347fa8, type: 2}
+  shipMaterial: {fileID: 2100000, guid: c65862e4b1a72f84e9a360631def145b, type: 2}
+  eptyMaterial: {fileID: 2100000, guid: 4fbc19d1a75a790469ca38e38ae82087, type: 2}
+  missMaterial: {fileID: 2100000, guid: 14f58fedb606bdd4580d9527c6001c71, type: 2}
