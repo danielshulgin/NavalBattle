@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-public class Player
+﻿namespace NavalBattle
 {
-    public Map map;
-    public int points;
+    public class Player
+    {
+        public Map map;
+        public int points;
+    }
 }
+
 

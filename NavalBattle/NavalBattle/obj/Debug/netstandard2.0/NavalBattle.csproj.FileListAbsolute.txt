@@ -1,0 +1,9 @@
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\bin\Debug\netstandard2.0\NavalBattle.deps.json
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\bin\Debug\netstandard2.0\NavalBattle.dll
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\bin\Debug\netstandard2.0\NavalBattle.pdb
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\obj\Debug\netstandard2.0\NavalBattle.csprojAssemblyReference.cache
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\obj\Debug\netstandard2.0\NavalBattle.csproj.CoreCompileInputs.cache
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\obj\Debug\netstandard2.0\NavalBattle.AssemblyInfoInputs.cache
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\obj\Debug\netstandard2.0\NavalBattle.AssemblyInfo.cs
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\obj\Debug\netstandard2.0\NavalBattle.dll
+E:\UNITY\lerning\OOP\NavalBattle\NavalBattle\obj\Debug\netstandard2.0\NavalBattle.pdb

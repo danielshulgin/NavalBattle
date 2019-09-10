@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using NavalBattle;
 
 namespace NavalBattle
 {
@@ -13,10 +12,10 @@ namespace NavalBattle
         public event Action<Player> GameOver = (p) => { };
         public List<Ship> ships = new List<Ship>();
 
-        public Map(Settings settings)
+        public Map(int width, int height)
         {
-            width = settings.mapWidth;
-            height = settings.mapHeight;
+            this.width = width;
+            this.height = height;
             cells = new Cell[width, height];
             for (int x = 0; x < width; x++)
             {
@@ -89,13 +88,13 @@ namespace NavalBattle
             return false;
         }
 
-        public bool CanPutShip(int x, int y, ShipSettings shipSettings, Direction direction, out Cell[] deck)
+        public bool CanPutShip(int x, int y, int length, Direction direction, out Cell[] deck)
         {
-            deck = new Cell[shipSettings.length];
+            deck = new Cell[length];
             switch (direction)
             {
                 case Direction.Up:
-                    for (int i = 0; i < shipSettings.length; i++)
+                    for (int i = 0; i < length; i++)
                     {
                         int Xi = x;
                         int Yi = y + i;
@@ -107,7 +106,7 @@ namespace NavalBattle
                     }
                     break;
                 case Direction.Down:
-                    for (int i = 0; i < shipSettings.length; i++)
+                    for (int i = 0; i < length; i++)
                     {
                         int Xi = x;
                         int Yi = y - i;
@@ -119,7 +118,7 @@ namespace NavalBattle
                     }
                     break;
                 case Direction.Right:
-                    for (int i = 0; i < shipSettings.length; i++)
+                    for (int i = 0; i < length; i++)
                     {
                         int Xi = x + i;
                         int Yi = y;
@@ -131,7 +130,7 @@ namespace NavalBattle
                     }
                     break;
                 case Direction.Left:
-                    for (int i = 0; i < shipSettings.length; i++)
+                    for (int i = 0; i < length; i++)
                     {
                         int Xi = x - i;
                         int Yi = y;

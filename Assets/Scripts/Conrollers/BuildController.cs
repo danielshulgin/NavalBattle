@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using NavalBattle;
 
 public enum Turn
 {
@@ -23,7 +22,7 @@ public class BuildController : MonoBehaviour
     public void ResetMap()
     {
         active = true;
-        map = new Map(settings);
+        map = new Map(settings.mapWidth, settings.mapHeight);
         inPrototype = false;
         shipTypeNumber = 0;
         direction = Direction.Right;
@@ -72,7 +71,7 @@ public class BuildController : MonoBehaviour
                         {
                             cell.cellType = CellType.Empty;
                         }
-                    if (map.CanPutShip(x, y, settings.ships[shipTypeNumber], direction, out deck))
+                    if (map.CanPutShip(x, y, settings.ships[shipTypeNumber].length, direction, out deck))
                     {
 
                         selectedDecks = deck;
@@ -106,7 +105,7 @@ public class BuildController : MonoBehaviour
                         {
                             cell.cellType = CellType.Empty;
                         }
-                    if (map.CanPutShip(x, y, settings.ships[shipTypeNumber], direction, out deck))
+                    if (map.CanPutShip(x, y, settings.ships[shipTypeNumber].length, direction, out deck))
                     {
                         foreach (var cell in deck)
                         {
